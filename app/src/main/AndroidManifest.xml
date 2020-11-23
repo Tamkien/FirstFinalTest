@@ -3,16 +3,19 @@
     package="com.kienct.firstfinaltest">
 
     <uses-feature android:name="android.hardware.camera.any" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstFinalTest">
+        <activity android:name=".sharedpreferences.ShowResultActivity"></activity>
+        <activity android:name=".sharedpreferences.SharedPreferencesActivity" />
+
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
